@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD02EC75-A18B-4FA9-BEEA-C1A5A674DA01}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		js\jquery.js = js\jquery.js
+		js\jquery.touch_box.js = js\jquery.touch_box.js
+		js\jquery.touch_box.min.js = js\jquery.touch_box.min.js
+		css\style.css = css\style.css
+		tripBook.css = tripBook.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{59AF79F0-C0D3-40BC-B645-C633BA254A07}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Desktop\book.jpg = ..\..\..\..\Desktop\book.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59AF79F0-C0D3-40BC-B645-C633BA254A07} = {AD02EC75-A18B-4FA9-BEEA-C1A5A674DA01}
+	EndGlobalSection
+EndGlobal
