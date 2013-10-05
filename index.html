@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="tripBook.css" type="text/css" />
+    <meta charset="utf-8" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.touch_box.min.js"></script>
+    <script>
+        function initialize() {
+            var fenway = new google.maps.LatLng(51.51757, -0.12594);
+            var mapOptions = {
+                center: fenway,
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(
+                document.getElementById('map-canvas'), mapOptions);
+            var panoramaOptions = {
+                position: fenway,
+                pov: {
+                    heading: 34,
+                    pitch: 10
+                }
+            };
+            var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
+            map.setStreetView(panorama);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    <title>TripBook</title>
+</head>
+
+
+<body>
+    <div id="map-canvas"  class="polaroid polaroid-left touch-box" data-resize="true"  data-drag="true" style="position: absolute; right: 10%; top: 10%; width: 850px; height: 500px;"></div>
+    <div id="pano" class="polaroid polaroid-left touch-box" data-resize="true"  data-drag="true" style="position: absolute; right: 10%; top: 10%; width: 850px; height: 500px;">
+    </div>
+
+    <div class="polaroid polaroid-left touch-box" data-drag="true" data-rotate="true">
+        <div class="pic-container">
+            <img class="pic" src="http://i1344.photobucket.com/albums/p652/azedoeag/Photo_zps8cc09945.png" />
+        </div>
+        <div class="text-container">
+            <p class="text">Day 1</p>
+        </div>
+    </div>
+        <div class="polaroid polaroid-left touch-box" data-drag="true" data-rotate="true">
+        <div class="pic-container">
+            <img class="pic" src="http://i1344.photobucket.com/albums/p652/azedoeag/Photo_zps8cc09945.png" />
+        </div>
+        <div class="text-container">
+            <p class="text">Day 2</p>
+        </div>
+    </div>
+        <div class="polaroid polaroid-left touch-box" data-drag="true" data-rotate="true">
+        <div class="pic-container">
+            <img class="pic" src="http://i1344.photobucket.com/albums/p652/azedoeag/Photo_zps8cc09945.png" />
+        </div>
+        <div class="text-container">
+            <p class="text">Day 3</p>
+        </div>
+    </div>
+        <div class="polaroid polaroid-left touch-box" data-drag="true" data-rotate="true">
+        <div class="pic-container">
+            <img class="pic" src="http://i1344.photobucket.com/albums/p652/azedoeag/Photo_zps8cc09945.png" />
+        </div>
+        <div class="text-container">
+            <p class="text">Day 4</p>
+        </div>
+    </div>
+    <div class="polaroid polaroid-left touch-box" data-drag="true" data-rotate="true" >
+        <div class="pic-container">
+            <img class="pic" src="http://i1344.photobucket.com/albums/p652/azedoeag/Photo_zps8cc09945.png" />
+        </div>
+        <div class="text-container">
+            <p class="text">Day 5</p>
+        </div>
+    </div>
+</body>
+</html>
